@@ -4,7 +4,6 @@ import os
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
 
-from models.base_model import BaseModel, Base
 
 
 class User(BaseModel, Base):
@@ -32,3 +31,4 @@ class User(BaseModel, Base):
         cascade="all, delete, delete-orphan",
         backref='user'
     ) if os.getenv('HBNB_TYPE_STORAGE') == 'db' else None
+from models.base_model import BaseModel, Base
