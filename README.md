@@ -1,6 +1,6 @@
-<center> <h1>HBNB - The Console</h1> </center>
+<center> <h1>AirBnB clone - MySQL</h1> </center>
 
-This repository contains the initial stage of a student project to build a clone of the AirBnB website. This stage implements a backend interface, or console, to manage program data. Console commands allow the user to create, update, and destroy objects, as well as manage file storage. Using a system of JSON serialization/deserialization, storage is persistent between sessions.
+This repository contains a command interpreter for the Holberton Airbnb project, as well as applications for web deployment. The console can be run from the command line and to create, manipulate, and store class objects in a JSON format or using a MySQL database. You'll also find a series of Flask web applications used for deployment of dynamic web content.
 
 ---
 
@@ -8,7 +8,7 @@ This repository contains the initial stage of a student project to build a clone
 
 | Tasks | Files | Description |
 | ----- | ----- | ------ |
-| 0: Authors/README File | [AUTHORS](https://github.com/justinmajetich/AirBnB_clone/blob/dev/AUTHORS) | Project authors |
+| 0: Authors/README File | [AUTHORS](https://github.com/nandweza/AirBnB_clone_v2/blob/dev/AUTHORS) | Project authors |
 | 1: Pep8 | N/A | All code is pep8 compliant|
 | 2: Unit Testing | [/tests](https://github.com/justinmajetich/AirBnB_clone/tree/dev/tests) | All class-defining modules are unittested |
 | 3. Make BaseModel | [/models/base_model.py](https://github.com/justinmajetich/AirBnB_clone/blob/dev/models/base_model.py) | Defines a parent class to be inherited by all model classes|
@@ -53,7 +53,7 @@ This repository contains the initial stage of a student project to build a clone
 Users are able to issue a number of console command using an alternative syntax:
 
 	Usage: <class_name>.<command>([<id>[name_arg value_arg]|[kwargs]])
-Advanced syntax is implemented for the following commands: 
+Advanced syntax is implemented for the following commands:
 
     * all - Shows all objects the program has access to, or all objects of a given class
 
@@ -78,7 +78,7 @@ Usage: create <class_name>
 ```
 (hbnb) create BaseModel
 3aa5babc-efb6-4041-bfe9-3cc9727588f8
-(hbnb)                   
+(hbnb)
 ```
 ###### Example 1: Show an object
 Usage: show <class_name> <_id>
@@ -87,7 +87,7 @@ Usage: show <class_name> <_id>
 (hbnb) show BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
 [BaseModel] (3aa5babc-efb6-4041-bfe9-3cc9727588f8) {'id': '3aa5babc-efb6-4041-bfe9-3cc9727588f8', 'created_at': datetime.datetime(2020, 2, 18, 14, 21, 12, 96959), 
 'updated_at': datetime.datetime(2020, 2, 18, 14, 21, 12, 96971)}
-(hbnb)  
+(hbnb)
 ```
 ###### Example 2: Destroy an object
 Usage: destroy <class_name> <_id>
@@ -95,7 +95,7 @@ Usage: destroy <class_name> <_id>
 (hbnb) destroy BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
 (hbnb) show BaseModel 3aa5babc-efb6-4041-bfe9-3cc9727588f8
 ** no instance found **
-(hbnb)   
+(hbnb)
 ```
 ###### Example 3: Update an object
 Usage: update <class_name> <_id>
